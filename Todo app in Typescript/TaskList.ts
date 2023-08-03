@@ -21,7 +21,7 @@ gettasks(completed:boolean|undefined=undefined):Task[]{
     return this.tasks;
 }
 return this.tasks.filter(task=>task.completed===completed);
-//it completed is true or false, it filters the tasks based on their 'completed' property and returns the filtered arraay
+//if completed is true or false, it filters the tasks based on their 'completed' property and returns the filtered arraay
 //else it returns all the task.
 }
 }
