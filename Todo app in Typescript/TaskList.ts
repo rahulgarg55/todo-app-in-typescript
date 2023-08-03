@@ -1,8 +1,8 @@
-class TaskList{
-    private tasks:Task[]=[]; //will store an array of 'task' objects.
+class tasklists{
+    private tasks:taskk[]=[]; //will store an array of 'task' objects.
  //marked private because it can be only accessed with the 'tasklist' class.
     
- addtask(task:Task):void{
+ addtask(task:taskk):void{
         this.tasks.push(task); 
 }
 completetask(index:number):void{
@@ -16,7 +16,7 @@ edittask(index:number,title:string,description:string):void{
 deletetask(index:number):void{
     this.tasks.splice(index,1); //to specify the index of the task to be deleted
 }
-gettasks(completed:boolean|undefined=undefined):Task[]{
+gettasks(completed:boolean|undefined=undefined):taskk[]{
     if(completed===undefined){ 
     return this.tasks;
 }
